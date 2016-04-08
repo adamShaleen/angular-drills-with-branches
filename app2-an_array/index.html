@@ -1,10 +1,25 @@
-<html ng-app="arrayApp">
+<html ng-app="attempt2">
 	<head>
 		<link rel="stylesheet" href="style.css"></link>
+		<title>Attempt 2</title>
 	</head>
-	<body ng-controller="arrayController">
-	
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<body ng-controller="controller">
+
+
+<input ng-model="data" placeholder="Filter"></input>
+<div ng-repeat="data in displayData | filter: data">
+<strong>{{data.name}}</strong>
+<p>Email: {{data.email}}</p>
+<p>Phone: {{data.phone}}</p>
+<hr>
+<br>
+</div>
+
+
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>

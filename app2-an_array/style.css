@@ -3,6 +3,18 @@
 	width: 100%;
 }
 .personData {
-	width: 24%;	
+	width: 24%;
 	display: inline-block;
+}
+
+body {
+	text-align: center;
+}
+
+hr {
+	width: 25%;
+}
+
+input {
+	margin-bottom: 1%;s
 }

@@ -1,6 +1,39 @@
-<html>
-	<body>
-	
+<html ng-app='attempt1'>
+
+<link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+
+<title>Attempt 1</title>
+
+
+<body ng-controller="controller">
+
+ <!-- <input ng-model="data" placeholder="Filter User List"></input>
+
+  <input ng-model="textBox" placeholder="Enter Text"></input>
+
+      <div>Add Text: {{textBox}}</div><br>
+
+
+   <div ng-repeat="data in displayData | filter: data">
+       <strong>{{data.name}}</strong>
+	   <p>Email: {{data.email}}</p>
+	   <p>Phone: {{data.phone}}</p>
+	  <hr>
+	  <br>
+   </div> -->
+
+
+  <div>
+      <p>{{response.name}}</p>
+	  <p>Gender: {{response.gender}}</p>
+	  <p>Eye Color: {{response.eye_color}}</p>
+
+  </div>
+
+
+
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

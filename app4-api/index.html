@@ -1,7 +1,19 @@
-<html ng-app="apiApp">
-	<body>
-		
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<html ng-app="attempt5">
+
+
+	<body ng-controller="controller">
+
+       <div ng-repeat="data in displayStarWarsData">
+		   <strong>{{data.results[0].name}}</strong>
+		   <p>Gender: {{data.results[0].gender}}</p>
+		   <p>Eye Color: {{data.results[0].eye_color}}</p>
+		   <hr>
+		   <br>
+
+	   </div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>

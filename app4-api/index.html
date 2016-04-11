@@ -1,7 +1,17 @@
-<html ng-app="apiApp">
-	<body>
-		
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<html ng-app="attempt6">
+
+<title>Attempt6</title>
+
+
+<body ng-controller="controller">
+
+
+     <p>{{data[0].address_components[0].long_name}}</p>
+     <p>{{data[0].address_components[6].long_name}}</p>
+     <p>{{data[0].address_components[6].short_name}}</p>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>

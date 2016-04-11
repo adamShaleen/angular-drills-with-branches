@@ -1,6 +1,27 @@
-<html>
-	<body>
-	
+<html ng-app="attempt6">
+
+<link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+<title>Attempt6</title>
+
+	<body ng-controller="controller">
+
+    <!--Filtering by all the 'data'-->
+    <input ng-model="data" placeholder="Filter"></input>
+
+   <!--Taking data from an array of data and repeating over it to display the only property of each object-->
+   <div ng-repeat='data in displayData | filter: data'>
+         <p>{{data.name}}</p>
+        <hr>
+	   <br>
+   </div>
+
+   <!--This input box collects data under the 'addFriend' variable-->
+   <input ng-model="addFriend" placeholder="Add New Friend"></input>
+
+   <!--This button is tied to the addFriend variable and assigns it as the par passed in to the newUser Fn-->
+   <button ng-show="addFriend" ng-click="newUser({name: addFriend})">Click</button>
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

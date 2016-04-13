@@ -1,9 +1,31 @@
-<html>
-	<body>
-		<h1>app6 - routing</h1>
+<html ng-app="routePractice">
+	<body ng-controller="controller">
+		<h1>Routing Practice</h1>
+		<h3>MENU</h3>
+		<button ui-sref="home">HOME</button>
+		<button ui-sref="signUp">SIGN UP</button>
+		<button ui-sref="details">DETAILS</button>
+
+		<ui-view></ui-view>
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
 	</body>
 </html>
+
+
+
+
+<!-- Create an app that has three routes (using ui-router):
+* home `/`
+* sign up `/signup`
+* details `/details`
+
+Create templates for each and a simple menu that allows you to navigate between all three routes.
+
+Use `resolve` in the `details` state to retrieve a list of smurfs from any of the APIs listed in app #4 above.
+Show that data on the details state/view. Be sure the call to retrieve the data resides in a service. -->

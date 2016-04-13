@@ -1,7 +1,19 @@
-<html>
-	<body>
-		<h1>app6 - routing</h1>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<html ng-app="routingPractice">
+
+
+
+	<body ng-controller="controller">
+		<h1 style="text-decoration: underline">Routing Practice</h1>
+
+		<button ui-sref="view1">View 1</button>
+		<button ui-sref="view2">View 2</button>
+		<button ui-sref="view3">View 3</button>
+
+		<ui-view></ui-view>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>

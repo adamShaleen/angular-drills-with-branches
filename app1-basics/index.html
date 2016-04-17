@@ -13,6 +13,8 @@
 	<div ng-repeat="friend in displayFriends | filter: friend"><p>{{friend.name}}</p><p>Age: {{friend.age}}</p><hr></div>
 	<input ng-model="friend" placeholder="Filter"></input>
 
+	<div><p>{{data.name}}<br>Gender: {{data.gender}}<br>EyeColor: {{data.eye_color}}<br>Birth Year: {{data.birth_year}}<br>Hair Color: {{data.hair_color}}</p></div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
